@@ -74,10 +74,7 @@ Given,
     x\brak{0}&=8,\\  %%T_i=8
     x\brak{6}&=26  \\  %%T_f=26
 	d&=\frac{x\brak{6} - x\brak{0}}{N-1},\\
-    &=3
-\end{align}\\
-common term in A.P.
-\begin{align}
+    &=3\\
 	x\brak{n}&=u\brak{n}\brak{x\brak{0}+\brak{n}\brak{d}} \label{eq:eq1.11.9.2.14}
 \end{align}\\	
 the A.P. sequence is:\\
@@ -86,17 +83,14 @@ the A.P. sequence is:\\
 \end{align}\\
 Applying $Z$ Transform:     
 \begin{align}
-	x \brak{n} \xleftrightarrow{\mathcal{Z}} X \brak{z} \\
     X\brak{z}&=\sum_{n=-\infty}^{\infty} x \brak{n}z^{-n} 
 \end{align}\\
 using eq \eqref{eq:eq1.11.9.2.14}
 \begin{align}
-	&=\sum_{n=-\infty}^{\infty}(u\brak{n}\brak{x\brak{0}+n\brak{d})}z^{-n}\\
-	&=\sum_{n=0}^{\infty} (8\brak{1} + 3n\brak{1}) z^{-n}
+	&=\sum_{n=-\infty}^{\infty}(u\brak{n}\brak{x\brak{0}+n\brak{d})}z^{-n}
  \end{align}\\
 using eq \eqref{eq:eq apz},
 \begin{align}
-    &=8 \sum_{n=0}^{\infty}  z^{-n} + 3 \sum_n^{\infty} n z^{-n}\\
     \implies X\brak{z}&=\frac{8}{1-z^{-1}} + \frac{3 z^{-1}}{(1-z^{-1})^2}\\
     \notag &\cbrak{z\in\mathbb{C} : z \neq 1}
 \end{align}
