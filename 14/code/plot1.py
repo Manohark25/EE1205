@@ -14,9 +14,8 @@ plt.stem(range(num_terms), ap_terms, markerfmt='bo', linefmt='b-', basefmt='b-',
 plt.stem(0, first_term, markerfmt='ro',linefmt='b-',basefmt='b-', label='First Term = 8')
 plt.stem(num_terms-1, last_term, markerfmt='go',linefmt='b-',basefmt='b-', label='Last Term = 26')
 
-plt.title('Arithmetic Progression series(N=7)')
-plt.xlabel('Term Index')
-plt.ylabel('Term Value')
+plt.xlabel('n')
+plt.ylabel('x(n)')
 plt.legend()
 plt.grid(True)
 plt.savefig('plot1.png')
