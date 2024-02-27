@@ -67,6 +67,10 @@ The maximum Frequency present in the filtered  signal in Hz is \rule{1cm}{0.5mm}
 	\includegraphics[width=1\linewidth]{figs/answerdia.png}
 \end{figure}
 Given, \\
+
+\begin{align}
+	x\brak{t}&=cos\brak{240\pi t} + cos\brak{120\pi t}
+\end{align}
 \begin{table}[h]
 	\centering
 	\input{tables/table}
@@ -74,15 +78,10 @@ Given, \\
 	\label{tab:GATE.EE.2023.63}
 \end{table}
 \begin{align}
-	x\brak{t}&=cos\brak{240\pi t} + cos\brak{120\pi t}
-\end{align}
-Here, the input signal can be assumed as sum of two individual signals with frequency $f_1 =120Hz$ and $f_2 =60Hz$ .\\
-The frequency components present at sampler output :\\
-\begin{align}
-	&\implies f_1 , (f_s\pm f_1) , (2f_s \pm f_1) \dots\\
-	&\implies f_2 , (f_s\pm f_2) , (2f_s\pm f_2) \dots\\
-	eq (2) &\implies 120, 80,340,280,520 \dots\\
-	eq (3) &\implies 60 , 140,260,34,460 \dots 
+	& f_1 , (f_s\pm f_1) , (2f_s \pm f_1) \dots\\
+	& 120, 80,340,280,520 \dots\\
+	& f_2 , (f_s\pm f_2) , (2f_s\pm f_2) \dots\\
+	& 60 , 140,260,34,460 \dots 
 	 \end{align}
 From table $f_c = 100Hz$ \\
 LPF output : $60Hz$ , $80Hz$\\
@@ -94,7 +93,6 @@ Maximum Frequency present in the filtered signal is $80Hz$
 	\caption{Plot of x(t) vs t}
 \end{figure}
 \begin{figure}[ht]
-	\centering
 	\includegraphics[width=1\linewidth]{figs/samplingplot.png}
 	\caption{Plot of x(t) vs t}
 \end{figure}

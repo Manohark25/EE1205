@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.2.9)  27 FEB 2024 15:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.2.9)  27 FEB 2024 15:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1296,45 +1296,36 @@ File: figs/answerdia.png Graphic file (type png)
 <use figs/answerdia.png>
 Package pdftex.def Info: figs/answerdia.png  used on input line 67.
 (pdftex.def)             Requested size: 252.0pt x 80.6387pt.
- (./tables/table.tex)
-Overfull \hbox (25.60913pt too wide) in paragraph at lines 2--73
- [][] 
- []
 
-
-Underfull \hbox (badness 2197) in paragraph at lines 78--81
-\OT1/txr/m/n/12 The fre-quency com-po-nents present at sam-pler
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--81
+Underfull \hbox (badness 10000) in paragraph at lines 62--70
 
  []
 
+(./tables/table.tex)
 <figs/signalplot.png, id=9, 462.528pt x 346.896pt>
 File: figs/signalplot.png Graphic file (type png)
 <use figs/signalplot.png>
-Package pdftex.def Info: figs/signalplot.png  used on input line 93.
+Package pdftex.def Info: figs/signalplot.png  used on input line 92.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 <figs/samplingplot.png, id=10, 462.528pt x 346.896pt>
 File: figs/samplingplot.png Graphic file (type png)
 <use figs/samplingplot.png>
-Package pdftex.def Info: figs/samplingplot.png  used on input line 98.
+Package pdftex.def Info: figs/samplingplot.png  used on input line 96.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./figs/answerdia.png> <./figs/signalplot.png> <./figs/samplingplot.png>] (./m
-ain.aux)
+ <./figs/answerdia.png> <./figs/signalplot.png> <./figs/samplingplot.png>]
+(./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30509 strings out of 478287
- 600115 string characters out of 5849290
- 855658 words of memory out of 5000000
+ 30511 strings out of 478287
+ 600126 string characters out of 5849290
+ 854658 words of memory out of 5000000
  48025 multiletter control sequences out of 15000+600000
- 548840 words of font info for 202 fonts, out of 8000000 for 9000
+ 550156 words of font info for 204 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  101i,11n,96p,408b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1344,7 +1335,7 @@ t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 fonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (1 page, 194025 bytes).
+Output written on main.pdf (1 page, 193399 bytes).
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  45 compressed objects within 1 object stream
