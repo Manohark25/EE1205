@@ -28,7 +28,7 @@
 \usepackage{ifthen}                                           
 \usepackage{lscape}
 \usepackage[export]{adjustbox}
-
+\usepackage{pgfplots}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{problem}{Problem}
 \newtheorem{proposition}{Proposition}[section]
@@ -37,63 +37,73 @@
 \newtheorem{example}{Example}[section]
 \newtheorem{definition}[problem]{Definition}
 \newcommand{\BEQA}{\begin{eqnarray}}
-\newcommand{\EEQA}{\end{eqnarray}}
+	\newcommand{\EEQA}{\end{eqnarray}}
 \newcommand{\define}{\stackrel{\triangle}{=}}
 \newtheorem{rem}{Remark}
 
 \begin{document}
-\parindent 0px
-\bibliographystyle{IEEEtran}
-
-\vspace{3cm}
-
-\title{GATE:EE/63}
-\author{EE23BTECH11208 - Manohar K$^{*}$
-}
-\maketitle
-\newpage
-\bigskip
-
-% \renewcommand{\thefigure}{\theenumi}
-% \renewcommand{\thetable}{\theenumi}
-
-
-
-\textbf{Question:} \hspace{2pt} A signal $x\brak{t}=2\cos{(180\pi t)}\cos{(60\pi t)}$ is sampled at 200 Hz and then passed through an ideal low pass filter having cut-off frequency of 100 Hz.\\
-The maximum Frequency present in the filtered  signal in Hz is \rule{1cm}{0.5mm} (Round off to the nearest integer.) \hfill (GATE 2023 EE)\\
-\noindent \textbf{Solution:}\\
-\begin{figure}[ht]
+	\parindent 0px
+	\bibliographystyle{IEEEtran}
+	
+	\vspace{3cm}
+	
+	\title{GATE:EE/63}
+	\author{EE23BTECH11208 - Manohar K$^{*}$
+	}
+	\maketitle
+	\newpage
+	\bigskip
+	
+	% \renewcommand{\thefigure}{\theenumi}
+	% \renewcommand{\thetable}{\theenumi}
+	
+	
+	
+	\textbf{Question:} \hspace{2pt} A signal $x\brak{t}=2\cos{(180\pi t)}\cos{(60\pi t)}$ is sampled at 200 Hz and then passed through an ideal low pass filter having cut-off frequency of 100 Hz.\\
+	The maximum Frequency present in the filtered  signal in Hz is \rule{1cm}{0.5mm} (Round off to the nearest integer.) \hfill (GATE 2023 EE)\\
+	\noindent \textbf{Solution:}\\
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=1\linewidth]{figs/answerdia.png}
+	\end{figure}
+	Given, \\
+	
+	\begin{align}
+		x\brak{t}&=\cos\brak{240\pi t} + \cos\brak{120\pi t}
+	\end{align}\\
+	\begin{table}[h]
+		\centering
+		\input{tables/table}
+		\caption{Parameters}
+		\label{tab:GATE.EE.2023.63}
+	\end{table}\\
+	Aliased frequencies when $f_1$ frequency signal is sampled at $200Hz$\\
+	\begin{align}
+		& f_1 , \abs{f_s\pm f_1} , \abs{2f_s \pm f_1} \dots\\
+		& 120, 80,340,280,520 \dots
+	\end{align}
+	Aliased frequencies when $f_2$ frequency signal is sampled at $200Hz$\\
+	\begin{align}
+		& f_2 , \abs{f_s\pm f_2} , \abs{2f_s\pm f_2} \dots\\
+		& 60 , 140,260,340,460 \dots 
+	\end{align}
+\begin{figure}
 	\centering
-	\includegraphics[width=1\linewidth]{figs/answerdia.png}
-\end{figure}
-Given, \\
-
-\begin{align}
-	x\brak{t}&=cos\brak{240\pi t} + cos\brak{120\pi t}
-\end{align}
-\begin{table}[h]
+	\input{texfigs/deltafn.tex}
+	\caption{delta function of input signal }
+\end{figure}\\
+	
+	
+\begin{figure}
 	\centering
-	\input{tables/table}
-	\caption{Parameters}
-	\label{tab:GATE.EE.2023.63}
-\end{table}
-\begin{align}
-	& f_1 , (f_s\pm f_1) , (2f_s \pm f_1) \dots\\
-	& 120, 80,340,280,520 \dots\\
-	& f_2 , (f_s\pm f_2) , (2f_s\pm f_2) \dots\\
-	& 60 , 140,260,34,460 \dots 
-	 \end{align}
-From table $f_c = 100Hz$ \\
-LPF output : $60Hz$ , $80Hz$\\
-Maximum Frequency present in the filtered signal is $80Hz$
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=1\linewidth]{figs/signalplot.png}
-	\caption{Plot of x(t) vs t}
+	\input{texfigs/filtereddeltafn.tex}
+	\caption{delta function of sampled and filtered signal }
 \end{figure}
-\begin{figure}[ht]
-	\includegraphics[width=1\linewidth]{figs/samplingplot.png}
-	\caption{Plot of x(t) vs t}
-\end{figure}
+	from table $f_c = 100Hz$ \\
+	LPF output : $60Hz$ , $80Hz$\\
+	Maximum Frequency present in the filtered signal is $80Hz$.
+	
+	
+	
+	
 \end{document}
